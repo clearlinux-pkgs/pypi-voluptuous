@@ -4,7 +4,7 @@
 #
 Name     : voluptuous
 Version  : 0.8.8
-Release  : 2
+Release  : 4
 URL      : https://pypi.python.org/packages/source/v/voluptuous/voluptuous-0.8.8.tar.gz
 Source0  : https://pypi.python.org/packages/source/v/voluptuous/voluptuous-0.8.8.tar.gz
 Summary  : Voluptuous is a Python data validation library
