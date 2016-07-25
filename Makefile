@@ -1,5 +1,5 @@
 PKG_NAME := voluptuous
-URL := https://pypi.python.org/packages/source/v/voluptuous/voluptuous-0.8.11.tar.gz
+URL := http://pypi.debian.net/voluptuous/voluptuous-0.9.1.tar.gz
 ARCHIVES :=
 
 include ../common/Makefile.common
