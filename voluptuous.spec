@@ -4,7 +4,7 @@
 #
 Name     : voluptuous
 Version  : 0.9.3
-Release  : 15
+Release  : 16
 URL      : http://pypi.debian.net/voluptuous/voluptuous-0.9.3.tar.gz
 Source0  : http://pypi.debian.net/voluptuous/voluptuous-0.9.3.tar.gz
 Summary  : Voluptuous is a Python data validation library
@@ -16,6 +16,7 @@ BuildRequires : pip
 BuildRequires : python-dev
 BuildRequires : python3-dev
 BuildRequires : setuptools
+BuildRequires : setuptools-python
 
 %description
 Voluptuous is a Python data validation library
@@ -24,6 +25,7 @@ Voluptuous is a Python data validation library
 %package python
 Summary: python components for the voluptuous package.
 Group: Default
+Requires: setuptools-python
 
 %description python
 python components for the voluptuous package.
@@ -34,12 +36,12 @@ python components for the voluptuous package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1487790873
+export SOURCE_DATE_EPOCH=1487790947
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1487790873
+export SOURCE_DATE_EPOCH=1487790947
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
