@@ -4,7 +4,7 @@
 #
 Name     : voluptuous
 Version  : 0.10.5
-Release  : 17
+Release  : 18
 URL      : https://pypi.debian.net/voluptuous/voluptuous-0.10.5.tar.gz
 Source0  : https://pypi.debian.net/voluptuous/voluptuous-0.10.5.tar.gz
 Summary  : Voluptuous is a Python data validation library
