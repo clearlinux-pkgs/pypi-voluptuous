@@ -4,7 +4,7 @@
 #
 Name     : voluptuous
 Version  : 0.11.5
-Release  : 22
+Release  : 23
 URL      : https://files.pythonhosted.org/packages/6e/5e/4e721e30cf175f9e11a5acccf4cd74898c32cae93580308ecd4cf7d2a454/voluptuous-0.11.5.tar.gz
 Source0  : https://files.pythonhosted.org/packages/6e/5e/4e721e30cf175f9e11a5acccf4cd74898c32cae93580308ecd4cf7d2a454/voluptuous-0.11.5.tar.gz
 Summary  : # Voluptuous is a Python data validation library
