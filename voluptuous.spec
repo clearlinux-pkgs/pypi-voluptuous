@@ -4,7 +4,7 @@
 #
 Name     : voluptuous
 Version  : 0.11.7
-Release  : 27
+Release  : 28
 URL      : https://files.pythonhosted.org/packages/24/3b/fe531688c0d9e057fccc0bc9430c0a3d4b90e0d2f015326e659c2944e328/voluptuous-0.11.7.tar.gz
 Source0  : https://files.pythonhosted.org/packages/24/3b/fe531688c0d9e057fccc0bc9430c0a3d4b90e0d2f015326e659c2944e328/voluptuous-0.11.7.tar.gz
 Summary  : # Voluptuous is a Python data validation library
@@ -42,6 +42,7 @@ python components for the voluptuous package.
 Summary: python3 components for the voluptuous package.
 Group: Default
 Requires: python3-core
+Provides: pypi(voluptuous)
 
 %description python3
 python3 components for the voluptuous package.
@@ -49,13 +50,14 @@ python3 components for the voluptuous package.
 
 %prep
 %setup -q -n voluptuous-0.11.7
+cd %{_builddir}/voluptuous-0.11.7
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1565734756
+export SOURCE_DATE_EPOCH=1582904556
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
@@ -69,7 +71,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/voluptuous
-cp COPYING %{buildroot}/usr/share/package-licenses/voluptuous/COPYING
+cp %{_builddir}/voluptuous-0.11.7/COPYING %{buildroot}/usr/share/package-licenses/voluptuous/2b280b388697926832dc180bb05b9bba2086b783
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -80,7 +82,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/voluptuous/COPYING
+/usr/share/package-licenses/voluptuous/2b280b388697926832dc180bb05b9bba2086b783
 
 %files python
 %defattr(-,root,root,-)
