@@ -1,5 +1,5 @@
 PKG_NAME := voluptuous
-URL = https://files.pythonhosted.org/packages/24/3b/fe531688c0d9e057fccc0bc9430c0a3d4b90e0d2f015326e659c2944e328/voluptuous-0.11.7.tar.gz
+URL = https://files.pythonhosted.org/packages/04/87/015fc3ccaa2e4c1a1d427ec27b12c144027acf55bdcba53634a6b69b9314/voluptuous-0.12.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
