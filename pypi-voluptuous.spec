@@ -4,7 +4,7 @@
 #
 Name     : pypi-voluptuous
 Version  : 0.12.2
-Release  : 48
+Release  : 49
 URL      : https://files.pythonhosted.org/packages/c0/2c/ccbeb25364e3e0c5e4522f13d66e2fc639bb4d4ecdf73be0959552cbecb4/voluptuous-0.12.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c0/2c/ccbeb25364e3e0c5e4522f13d66e2fc639bb4d4ecdf73be0959552cbecb4/voluptuous-0.12.2.tar.gz
 Summary  : UNKNOWN
@@ -14,7 +14,6 @@ Requires: pypi-voluptuous-license = %{version}-%{release}
 Requires: pypi-voluptuous-python = %{version}-%{release}
 Requires: pypi-voluptuous-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : setuptools-python
 
 %description
 # CONTRIBUTIONS ONLY
@@ -57,7 +56,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641517001
+export SOURCE_DATE_EPOCH=1641945717
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
