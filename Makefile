@@ -1,5 +1,5 @@
 PKG_NAME := pypi-voluptuous
-URL = https://files.pythonhosted.org/packages/72/0c/0ed7352eeb7bd3d53d2c0ae87fa1e222170f53815b8df7d9cdce7ffedec0/voluptuous-0.13.1.tar.gz
+URL = https://files.pythonhosted.org/packages/9d/81/01a869fbe01ce20f84a974b3fca1d152fade3551c92bb9d11fd74ed5e3a9/voluptuous-0.14.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
